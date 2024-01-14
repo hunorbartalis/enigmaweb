@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html data-lt-installed="true" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Engima</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://media.licdn.com/dms/image/C4D0BAQHZd7i142kvSg/company-logo_200_200/0/1676391251916?e=1695859200&v=beta&t=t8WHIxBOQ6lySyEBsAfvyh1KodDJqiTvnVCPmCaaOHI">
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"  type='text/css'>
+    <!-- Styles -->
+    <link href="../assets/css/style.min.css" rel="stylesheet" type="text/css">
+    <!-- Style about-->
+    <link href="../assets/css/styleabout.css" rel="stylesheet" type="text/css">
+    <!-- ThreeJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
+    <!-- Style -->
+    <style>
+      html, body {
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      canvas { display: block; }
+
+      #container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: hidden;
+        filter: grayscale(90%);
+      }
+
+      #container canvas {
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      <!-- CSS for the white toggler -->
+      .navbar-toggler {
+        border-color: white;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" width="30" height="30"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+      }
+
+      .logo-container {
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 10;
+      }
+
+      .home-logo {
+          max-width: 200px;
+          animation: glitch 1s infinite;
+      }
+
+      @keyframes glitch {
+          2%,64%{
+              transform: translate(2px,0) skew(0deg);
+          }
+          4%,60%{
+              transform: translate(-2px,0) skew(0deg);
+          }
+          62%{
+              transform: translate(0,0) skew(7.5deg);
+          }
+      }
+
+      .typewriter, .typewriter-content {
+    opacity: 0;
+}
+
+    .five-cols {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    @media (max-width: 767.98px) {
+        .five-cols {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .five-cols {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    </style>
+
+    </head>
+    <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black">
+                <div class="container">
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent" style="text-align: center;">
+                        <ul class="navbar-nav btn-menu">
+                          <li><a href="../index.html" class="nav-link" style="color: white;">Home</a></li>
+                          <li><a href="aboutus.html" class="nav-link" style="color: white;">About Us</a></li>
+                          <li class="active"><a href="#board" class="nav-link" style="color: white;">Meet the Board</a></li>
+                          <li><a href="#events" class="nav-link" style="color: white;">Events</a></li>
+                          <li><a href="#membership" class="nav-link" style="color: white;">Membership</a></li>
+                          <li><a href="#contact" class="nav-link" style="color: white;">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+    </nav>
+    <!-- Navbar end-->
+
+
+    <!-- About Us section  -->
+    <section class="bg-half d-table w-100" style="background: black; height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: center center;" id="about">
+        <div class="container text-center" style="z-index: 1; margin-top: 18vh;">
+            <div class="header my-5" style="color: white">
+              <h1>Meet the Engima Board 23-24</h1>
+              <p class="text-light" style="color: white">Meet and Greet our Team Members</p>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-3 five-cols">
+                <div class="img-block mb-5">
+                  <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                  <div class="content mt-2 text-light">
+                    <h4>Zain Knob</h4>
+                    <p class="text-light">Mechanical Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 five-cols">
+                <div class="img-block mb-5">
+                  <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                  <div class="content mt-2 text-light">
+                    <h4>Syndia Lee</h4>
+                    <p class="text-light">Software Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 five-cols">
+                <div class="img-block mb-5">
+                  <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                  <div class="content mt-2 text-light">
+                    <h4>Noel Flantier</h4>
+                    <p class="text-light">Joomla Specialist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 five-cols">
+                <div class="img-block mb-5">
+                  <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                  <div class="content mt-2 text-light">
+                    <h4>Bobby Doe</h4>
+                    <p class="text-light">Street Artist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 five-cols">
+                <div class="img-block mb-5">
+                  <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                  <div class="content mt-2 text-light">
+                    <h4>Bobby Doe</h4>
+                    <p class="text-light">Street Artist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-footer">
+      <!-- Grid container -->
+      <div class="container text-center p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn border-0" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a class="btn border-0" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a class="btn border-0Li" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a class="btn border-0" href="#!" role="button">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Linkedin -->
+          <a class="btn border-0" onClick="window.open('https://www.linkedin.com/company/enigmatilburg/');" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a class="btn border-0" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <div class="footer-bar bg-footer" style="padding-bottom: 1.5rem !important;">
+          <div class="container text-center">
+              <div class="row justify-content-center">
+                      <div class="text-center">
+                          <p class="mb-0">© 2023 Association Enigma</p>
+                      </div>
+              </div><!--end row-->
+          </div><!--end container-->
+      </div>
+    </footer>
+    <!-- Typewriter effect-->
+    <script>
+    const typewriterContainers = document.querySelectorAll('.title-heading');  // Use the parent container for observing
+
+    typewriterContainers.forEach(container => {
+        const typewriters = container.querySelectorAll('.typewriter, .typewriter-content');
+        let queueIndex = 0;
+
+        function startTypewriter(target) {
+            if (target.dataset.isTyping === "true") return;  // <-- Check if currently typing on this specific target
+            target.dataset.isTyping = "true";  // <-- Set flag to true for this specific target
+
+            target.style.opacity = '1';  // Make the text element visible
+
+            const text = target.textContent;
+            target.textContent = '';
+            let i = 0;
+
+            const speed = 2000 / text.length;
+
+            function typeWriter() {
+                if (i < text.length) {
+                    target.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                } else {
+                    queueIndex++;
+                    target.dataset.isTyping = "false";  // <-- Reset flag for this specific target when finished
+                    if (queueIndex < typewriters.length) {
+                        startTypewriter(typewriters[queueIndex]);
+                    }
+                }
+            }
+            typeWriter();
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && queueIndex === 0) {
+                    startTypewriter(typewriters[queueIndex]);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(container);
+    });
+
+
+    </script>
+    <!-- Bootstrap core -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Timeline -->
+    <script type ="text/javascript" src="../assets/js/timeline.js"></script>
+  </body>
+</html>
