@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html data-lt-installed="true" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Engima</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://media.licdn.com/dms/image/C4D0BAQHZd7i142kvSg/company-logo_200_200/0/1676391251916?e=1695859200&v=beta&t=t8WHIxBOQ6lySyEBsAfvyh1KodDJqiTvnVCPmCaaOHI">
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"  type='text/css'>
+    <!--
+    Fonticons, Inc. (https://fontawesome.com)
+
+    Font Awesome Free License
+
+    Font Awesome Free is free, open source, and GPL friendly. You can use it for
+    commercial projects, open source projects, or really almost whatever you want.
+    Full Font Awesome Free license: https://fontawesome.com/license/free.
+
+    # Icons: CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/)
+
+    The Font Awesome Free download is licensed under a Creative Commons
+    Attribution 4.0 International License and applies to all icons packaged
+    as SVG and JS file types.
+
+    # Fonts: SIL OFL 1.1 License
+
+    In the Font Awesome Free download, the SIL OFL license applies to all icons
+    packaged as web and desktop font files.
+
+    Copyright (c) 2023 Fonticons, Inc. (https://fontawesome.com)
+    with Reserved Font Name: "Font Awesome".
+
+    This Font Software is licensed under the SIL Open Font License, Version 1.1.
+    This license is copied below, and is also available with a FAQ at:
+    http://scripts.sil.org/OFL
+
+    SIL OPEN FONT LICENSE
+    Version 1.1 - 26 February 2007
+
+    PREAMBLE
+    The goals of the Open Font License (OFL) are to stimulate worldwide
+    development of collaborative font projects, to support the font creation
+    efforts of academic and linguistic communities, and to provide a free and
+    open framework in which fonts may be shared and improved in partnership
+    with others.
+
+    The OFL allows the licensed fonts to be used, studied, modified and
+    redistributed freely as long as they are not sold by themselves. The
+    fonts, including any derivative works, can be bundled, embedded,
+    redistributed and/or sold with any software provided that any reserved
+    names are not used by derivative works. The fonts and derivatives,
+    however, cannot be released under any other type of license. The
+    requirement for fonts to remain under this license does not apply
+    to any document created using the fonts or their derivatives.
+
+    DEFINITIONS
+    "Font Software" refers to the set of files released by the Copyright
+    Holder(s) under this license and clearly marked as such. This may
+    include source files, build scripts and documentation.
+
+    "Reserved Font Name" refers to any names specified as such after the
+    copyright statement(s).
+
+    "Original Version" refers to the collection of Font Software components as
+    distributed by the Copyright Holder(s).
+
+    "Modified Version" refers to any derivative made by adding to, deleting,
+    or substituting — in part or in whole — any of the components of the
+    Original Version, by changing formats or by porting the Font Software to a
+    new environment.
+
+    "Author" refers to any designer, engineer, programmer, technical
+    writer or other person who contributed to the Font Software.
+
+    PERMISSION & CONDITIONS
+    Permission is hereby granted, free of charge, to any person obtaining
+    a copy of the Font Software, to use, study, copy, merge, embed, modify,
+    redistribute, and sell modified and unmodified copies of the Font
+    Software, subject to the following conditions:
+
+    1) Neither the Font Software nor any of its individual components,
+    in Original or Modified Versions, may be sold by itself.
+
+    2) Original or Modified Versions of the Font Software may be bundled,
+    redistributed and/or sold with any software, provided that each copy
+    contains the above copyright notice and this license. These can be
+    included either as stand-alone text files, human-readable headers or
+    in the appropriate machine-readable metadata fields within text or
+    binary files as long as those fields can be easily viewed by the user.
+
+    3) No Modified Version of the Font Software may use the Reserved Font
+    Name(s) unless explicit written permission is granted by the corresponding
+    Copyright Holder. This restriction only applies to the primary font name as
+    presented to the users.
+
+    4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+    Software shall not be used to promote, endorse or advertise any
+    Modified Version, except to acknowledge the contribution(s) of the
+    Copyright Holder(s) and the Author(s) or with their explicit written
+    permission.
+
+    5) The Font Software, modified or unmodified, in part or in whole,
+    must be distributed entirely under this license, and must not be
+    distributed under any other license. The requirement for fonts to
+    remain under this license does not apply to any document created
+    using the Font Software.
+
+    TERMINATION
+    This license becomes null and void if any of the above conditions are
+    not met.
+
+    DISCLAIMER
+    THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+    OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+    COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+    INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+    DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+    OTHER DEALINGS IN THE FONT SOFTWARE.
+
+    # Code: MIT License (https://opensource.org/licenses/MIT)
+
+    In the Font Awesome Free download, the MIT license applies to all non-font and
+    non-icon files.
+
+    Copyright 2023 Fonticons, Inc.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of
+    this software and associated documentation files (the "Software"), to deal in the
+    Software without restriction, including without limitation the rights to use, copy,
+    modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+    and to permit persons to whom the Software is furnished to do so, subject to the
+    following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+    # Attribution
+
+    Attribution is required by MIT, SIL OFL, and CC BY licenses. Downloaded Font
+    Awesome Free files already contain embedded comments with sufficient
+    attribution, so you shouldn't need to do anything additional when using these
+    files normally.
+
+    We've kept attribution comments terse, so we ask that you do not actively work
+    to remove them from files, especially code. They're a great way for folks to
+    learn about Font Awesome.
+
+    # Brand Icons
+
+    All brand icons are trademarks of their respective owners. The use of these
+    trademarks does not indicate endorsement of the trademark holder by Font
+    Awesome, nor vice versa. **Please do not use brand logos for any purpose except
+    to represent the company, product, or service to which they refer.**
+    -->
+
+    <!-- Styles -->
+    <link href="../assets/css/style.min.css" rel="stylesheet" type="text/css">
+    <!-- Style about-->
+    <link href="../assets/css/styleabout.css" rel="stylesheet" type="text/css">
+    <!-- Style -->
+    <style>
+      html, body {
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      canvas { display: block; }
+
+      #container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: hidden;
+        filter: grayscale(90%);
+      }
+
+      #container canvas {
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      <!-- CSS for the white toggler -->
+      .navbar-toggler {
+        border-color: white;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" width="30" height="30"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+      }
+
+      .logo-container {
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 10;
+      }
+
+      .home-logo {
+          max-width: 200px;
+          animation: glitch 1s infinite;
+      }
+
+      @keyframes glitch {
+          2%,64%{
+              transform: translate(2px,0) skew(0deg);
+          }
+          4%,60%{
+              transform: translate(-2px,0) skew(0deg);
+          }
+          62%{
+              transform: translate(0,0) skew(7.5deg);
+          }
+      }
+
+      .typewriter, .typewriter-content {
+    opacity: 0;
+      }
+
+    </style>
+
+    </head>
+    <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black">
+                <div class="container">
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent" style="text-align: center;">
+                        <ul class="navbar-nav btn-menu">
+                          <li><a href="../index.html" class="nav-link" style="color: white;">Home</a></li>
+                          <li class="active"><a href="#" class="nav-link" style="color: white;">About Us</a></li>
+                          <li><a href="team.html" class="nav-link" style="color: white;">Meet the Board</a></li>
+                          <li><a href="#events" class="nav-link" style="color: white;">Events</a></li>
+                          <li><a href="#membership" class="nav-link" style="color: white;">Membership</a></li>
+                          <li><a href="#contact" class="nav-link" style="color: white;">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+    </nav>
+    <!-- Navbar end-->
+
+
+    <!-- About Us section  -->
+    <section class="bg-half d-table w-100" style="background: black; height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: center center;" id="about">
+        <div class="container" style="z-index: 1; margin-top: 10vh;">
+            <div class="row" style="box-sizing: unset; ">
+              <div class="ag-timeline-block">
+              <div class="ag-timeline_title-box" style="padding: 0 0 100px;">
+                <div class="ag-timeline_title">The History of Enigma</div>
+              </div>
+              <section class="ag-section">
+                <div class="ag-format-container">
+                  <div class="js-timeline ag-timeline">
+                    <div class="js-timeline_line ag-timeline_line">
+                      <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+                    </div>
+                    <div class="ag-timeline_list">
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point">2022</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="ag-timeline-card_meta-box">
+                          </div>
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point">Mar</div>
+                          </div>
+                          <div class="ag-timeline-card_meta-box">
+                            <div class="ag-timeline-card_meta">Foundation</div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_img-box">
+                              <img src="" class="ag-timeline-card_img" width="640" height="360" />
+                            </div>
+                            <div class="ag-timeline-card_info">
+                              <div class="ag-timeline-card_title">Foundation</div>
+                              <div class="ag-timeline-card_desc">
+                                Study Association Enigma was founded.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="ag-timeline-card_meta-box">
+                            <div class="ag-timeline-card_meta">First Preparation Hackathon Event</div>
+                          </div>
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point">Apr</div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_img-box">
+                              <img src="" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                            </div>
+                            <div class="ag-timeline-card_info">
+                              <div class="ag-timeline-card_title">First Preparation Hackathon Event</div>
+                              <div class="ag-timeline-card_desc">
+                                Donec pede justo, fringilla
+                                vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                                tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                                nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point">May</div>
+                          </div>
+                          <div class="ag-timeline-card_meta-box">
+                            <div class="ag-timeline-card_meta">First Movie Night</div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_img-box">
+                              <img src="" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                            </div>
+                            <div class="ag-timeline-card_info">
+                              <div class="ag-timeline-card_title">First Movie Night</div>
+                              <div class="ag-timeline-card_desc">
+                                Aenean imperdiet. Etiam ultricies
+                                nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                                adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+                                hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                                sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+                                eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="ag-timeline-card_meta-box">
+                            <div class="ag-timeline-card_meta">Introduction Days - Meeting the First Years</div>
+                          </div>
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point">Aug</div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_img-box">
+                              <img src="" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                            </div>
+                            <div class="ag-timeline-card_info">
+                              <div class="ag-timeline-card_title">Introduction Days - Meeting the First Years</div>
+                              <div class="ag-timeline-card_desc">
+                                Cum sociis natoque penatibus et magnis dis parturient
+                                montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                                pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                                vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                                tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point">Sep</div>
+                          </div>
+                          <div class="ag-timeline-card_meta-box">
+                            <div class="ag-timeline-card_meta">NFT Symposium & Artificial Stupidity Panel Discussion</div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_img-box">
+                              <img src="" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                            </div>
+                            <div class="ag-timeline-card_info">
+                              <div class="ag-timeline-card_title">NFT Symposium & Artificial Stupidity Panel Discussion</div>
+                              <div class="ag-timeline-card_desc">
+                                Vivamus elementum semper nisi. Aenean vulputate eleifend
+                                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                                nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+                                nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="ag-timeline-card_meta-box">
+                            <div class="ag-timeline-card_meta">Hackathon Preparation Event</div>
+                          </div>
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point">Oct</div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_img-box">
+                              <img src="" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                            </div>
+                            <div class="ag-timeline-card_info">
+                              <div class="ag-timeline-card_title">Hackathon Preparation Event</div>
+                              <div class="ag-timeline-card_desc">
+                                Donec quam felis, ultricies nec, pellentesque eu,
+                                pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                                vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                                tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point">Nov</div>
+                          </div>
+                          <div class="ag-timeline-card_meta-box">
+                            <div class="ag-timeline-card_meta">Utrecht Field Trip</div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_img-box">
+                              <img src="" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                            </div>
+                            <div class="ag-timeline-card_info">
+                              <div class="ag-timeline-card_title">Utrecht Field Trip</div>
+                              <div class="ag-timeline-card_desc">
+                                Quisque rutrum. Aenean imperdiet. Etiam ultricies
+                                nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                                adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+                                hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point">2023</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="ag-timeline-card_meta-box">
+                          </div>
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="js-timeline_item ag-timeline_item">
+                        <div class="ag-timeline-card_box">
+                          <div class="ag-timeline-card_meta-box">
+                            <div class="ag-timeline-card_meta">First Preparation Hackathon Event</div>
+                          </div>
+                          <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                            <div class="ag-timeline-card_point">Apr</div>
+                          </div>
+                        </div>
+                        <div class="ag-timeline-card_item">
+                          <div class="ag-timeline-card_inner">
+                            <div class="ag-timeline-card_img-box">
+                              <img src="" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                            </div>
+                            <div class="ag-timeline-card_info">
+                              <div class="ag-timeline-card_title">First Preparation Hackathon Event</div>
+                              <div class="ag-timeline-card_desc">
+                                Donec pede justo, fringilla
+                                vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                                tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                                nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ag-timeline-card_arrow"></div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-footer">
+      <!-- Grid container -->
+      <div class="container text-center p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn border-0" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a class="btn border-0" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a class="btn border-0Li" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a class="btn border-0" href="#!" role="button">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Linkedin -->
+          <a class="btn border-0" onClick="window.open('https://www.linkedin.com/company/enigmatilburg/');" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a class="btn border-0" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <div class="footer-bar bg-footer" style="padding-bottom: 1.5rem !important;">
+          <div class="container text-center">
+              <div class="row justify-content-center">
+                      <div class="text-center">
+                          <p class="mb-0">© 2023 Association Enigma</p>
+                      </div>
+              </div><!--end row-->
+          </div><!--end container-->
+      </div>
+    </footer>
+    <!-- Typewriter effect-->
+    <script>
+    const typewriterContainers = document.querySelectorAll('.title-heading');  // Use the parent container for observing
+
+    typewriterContainers.forEach(container => {
+        const typewriters = container.querySelectorAll('.typewriter, .typewriter-content');
+        let queueIndex = 0;
+
+        function startTypewriter(target) {
+            if (target.dataset.isTyping === "true") return;  // <-- Check if currently typing on this specific target
+            target.dataset.isTyping = "true";  // <-- Set flag to true for this specific target
+
+            target.style.opacity = '1';  // Make the text element visible
+
+            const text = target.textContent;
+            target.textContent = '';
+            let i = 0;
+
+            const speed = 2000 / text.length;
+
+            function typeWriter() {
+                if (i < text.length) {
+                    target.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                } else {
+                    queueIndex++;
+                    target.dataset.isTyping = "false";  // <-- Reset flag for this specific target when finished
+                    if (queueIndex < typewriters.length) {
+                        startTypewriter(typewriters[queueIndex]);
+                    }
+                }
+            }
+            typeWriter();
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && queueIndex === 0) {
+                    startTypewriter(typewriters[queueIndex]);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(container);
+    });
+
+
+    </script>
+    <!-- Bootstrap core -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Timeline -->
+    <script type ="text/javascript" src="../assets/js/timeline.js"></script>
+    <!--
+    Copyright (c) 2024 by Álvaro (https://codepen.io/alvarotrigo/pen/yLzBJaN)
+    Fork of an original work Timeline IE (https://codepen.io/wikyware-net/pen/ZEeLVVE
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    -->
+  </body>
+</html>
